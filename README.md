@@ -7,4 +7,11 @@ Digits 4 & 5 have the high error rates, visualizing some of them show that they 
 
 Digit 9 is mostly misclassified as either 4 or 8, likewise, digits 4 and 8 are also occasionally misclassified as 9.
 
+Visualizing the 784 conditional probabilities per class (as 28 x 28 images) for a test sample with actual label 1 which is rightly classified:
+![image](https://user-images.githubusercontent.com/43993467/134775705-07d65fcc-08fc-401e-bf56-9e3969d30036.png)
+
+Visualizing the 784 conditional probabilities per class (as 28 x 28 images) for a test sample with actual label 4 which is wrongly classified as 9:
+![image](https://user-images.githubusercontent.com/43993467/134775734-1dd4e016-261f-4346-bcd3-f85c47e36e0b.png)
+
+
 Generally, Naive Bayes did poorly on the MNIST dataset, this could be attributed to the independent assumption which is likely not to be correct. Query time is faster compared to KNN, however, KNN provided better performance on the MNIST dataset. Naive Bayes doesn't perform well when there are repeated attributes or when attributes are not equally important, which are the case in the MNIST dataset.
